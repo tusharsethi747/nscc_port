@@ -1,0 +1,283 @@
+body{
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: black; */
+}
+nav{
+    background-color: black;
+    color: rgb(0, 0, 0);
+    height: 70px;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: larger;
+}
+.list-contents{
+    margin-right: 150px;
+    color: white;
+    font-size: large;
+}
+.list-contents li{
+    cursor: pointer;
+}
+.list-contents li:hover{
+    transform: scale(1.1);
+}
+a:active, a:visited, a:link, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.name{
+    margin-left: 150px;
+    color: white;
+}
+
+.main{
+    background-image: url(images/bg.png);
+    color: rgb(255, 255, 255);
+    padding: 170px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+.main-head{
+    font-size: 2rem;
+    /* color: crimson; */
+    font-style: italic;
+}
+.main-con{
+    font-size: 1.7rem;
+}
+
+.main-head span{
+    font-size: 3rem;
+}
+
+.btn{
+    background-color: #ffe600;
+    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    border: none;
+    transition: all 0.5s ease;
+    color: black;
+    border-radius: 8px;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.profile-pic{
+    width: 450px;
+    /* height: 450px; */
+    border-radius: 12px;
+    z-index: 0;
+}
+
+.about{
+    text-align: center;
+    width: 50%;
+    margin:auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* color: white; */
+    /* background-color: black; */
+}
+
+.head{
+    font-size: 3rem;
+}
+
+.about h3{
+    font-size: 1.5rem;
+}
+
+.about div{
+    text-align: left;
+}
+.wrap-skill{
+    background: rgb(22, 131, 232);
+    color: white;
+}
+
+.skills{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-left{
+    width: 40%;
+}
+
+.skills-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.skills-right hr{
+    height: 5px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(192, 192, 192);
+    position: relative;
+    width: 100%;
+}
+
+.skills-right hr::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffe600;
+}
+
+.hr1::before{
+    width: 95%;
+}
+.hr2::before{
+    width: 98%;
+}
+.hr3::before{
+    width: 50%;
+}
+.hr4::before{
+    width: 80%;
+}
+.con{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.contact-con{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    height: 100vh; 
+}
+.contact-con h1{
+    text-align: center;
+}
+.contact{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+ .contact h2{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact input, textarea{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-color: #000000;
+    width: 100%;
+}
+
+textarea{
+    border: 2px solid black;
+}
+.message-input{
+    height: 80px;
+    vertical-align: top;
+}
+
+.linkedin{
+    padding-left: 0;
+}
+.link-logo{
+    font-size: 1.5rem;
+    padding: 0 8px;
+}
+.link-logo:hover{
+    transform: scale(1.05);
+    color:#ffe600;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    font-size: 1.2rem;
+    background: rgb(22, 131, 232);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+footer p{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 920px){
+    .profile-pic{
+        width: 280px;
+        height: 280px;
+    }
+    .main-head{
+        font-size: 1.5rem;
+    }
+    .main-con{
+        font-size: 1.2rem;
+    }
+    .main-head span{
+        font-size: 2.5rem;
+    }
+    .about{
+        width: 80%;
+    }
+    .skills-data{
+        flex-direction: column;
+    }
+    .skills-left, .skills-right{
+        width: 95%;
+    }
+    .contact{
+        width: 95%;
+    } 
+    .contact h2{
+        margin-bottom: 20px;
+    }
+    .contact-con{
+        height: 100%;
+    }
+}
